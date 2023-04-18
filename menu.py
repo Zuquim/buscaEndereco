@@ -29,7 +29,7 @@ def apontar_funcoes(valor):
 
     elif valor == '2':
         uf = input('Insira o Estado: ')  # minimo dois caracteres
-        while uf.isalpha() == False or len(uf) < 2 or len(uf) > 2:  # != 2
+        while uf.isalpha() == False or 2 < len(uf) < 2:  # != 2
             print('Insira a silgla do Estado - minimo 2 caracteres')
             uf = input('Insira o Estado: ')
 
