@@ -48,7 +48,10 @@ def apontar_funcoes(valor):
     elif valor == '3':
         print('Obrigado! Saindo do Sistema...')
         time.sleep(1)
-        os.system('cls')
+        if (platform := sys.platform in ('darwin', 'linux')):
+            os.system('clear')
+        elif platform in ('cygwin', 'msys', 'win32'):
+            os.system('cls')
 
 
 def escolher_opcao(opt):
