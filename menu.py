@@ -49,7 +49,6 @@ def apontar_funcoes(valor):
         print('Obrigado! Saindo do Sistema...')
         time.sleep(1)
         os.system('cls')
-        sys.exit()
 
 
 def escolher_opcao(opt):
